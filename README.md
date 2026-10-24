@@ -1,4 +1,4 @@
-# rappidAI Quantum
+# rappidAI quantum
 
 Reproducible pipelines for preparing data, training tokenizers, developing,
 evaluating, and exporting compact language models.
