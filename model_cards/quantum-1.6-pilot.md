@@ -78,8 +78,8 @@ repository does not apply to the GGUF or tokenizer.
 
 ## Citation and sources
 
-- https://huggingface.co/rappidAI/quantum-1.6-pilot
-- https://github.com/rappidAI-Research/lumen-quantum/tree/f7eda1fb0ae153f0f9cc3477ead997cbdb462b39
+- https://huggingface.co/rappidai-research/quantum-1.6-pilot
+- https://github.com/rappidAI-Research/quantum-models/tree/f7eda1fb0ae153f0f9cc3477ead997cbdb462b39
 
 Cite the exact model revision, artifact checksum, code revision, and dataset
 terms rather than only the display name.

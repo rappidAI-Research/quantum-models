@@ -1,9 +1,4 @@
-"""Fail when tracked text references a non-canonical repository owner.
-
-The canonical technical repository is ``rappidAI-Research/lumen-quantum``. This
-check flags any ``github.com/<owner>/lumen-quantum`` reference whose owner is not
-canonical, while leaving bare user handles and profile links untouched.
-"""
+"""Check canonical Quantum navigation URLs while retaining versioned schema IDs."""
 
 from __future__ import annotations
 
@@ -13,8 +8,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CANONICAL_OWNER = "rappidAI-Research"
-CANONICAL_REPO = "lumen-quantum"
-SLUG_PATTERN = re.compile(r"github\.com/([A-Za-z0-9][A-Za-z0-9-]*)/" + CANONICAL_REPO)
+CANONICAL_REPO = "quantum-models"
+SLUG_PATTERN = re.compile(
+    r"github\.com/([A-Za-z0-9][A-Za-z0-9-]*)/(quantum-models|lumen-quantum)(?=[/#?\s]|$)"
+)
 TEXT_SUFFIXES = {
     ".cfg",
     ".cff",
@@ -50,13 +47,17 @@ def non_canonical_references() -> list[str]:
         except UnicodeDecodeError:
             continue
         for line_number, line in enumerate(text.splitlines(), start=1):
+            # A published schema identity is not a browser link. Renaming it would
+            # change the contract rather than repair navigation.
+            if path.parent == ROOT / "schemas" and re.match(r'\s*"\$id"\s*:', line):
+                continue
             for match in SLUG_PATTERN.finditer(line):
-                owner = match.group(1)
-                if owner.lower() != CANONICAL_OWNER.lower():
+                owner, repository = match.groups()
+                if owner.lower() != CANONICAL_OWNER.lower() or repository != CANONICAL_REPO:
                     problems.append(
                         f"{path.relative_to(ROOT)}:{line_number}: "
-                        f"non-canonical repository owner '{owner}' "
-                        f"(expected '{CANONICAL_OWNER}')"
+                        f"non-canonical repository '{owner}/{repository}' "
+                        f"(expected '{CANONICAL_OWNER}/{CANONICAL_REPO}')"
                     )
     return problems
 

@@ -14,7 +14,7 @@ audited financial evidence.
 
 - [Website](https://www.rappidai-research.com) and
   [its existing repository](https://github.com/desirecikemgil/rappidai-research.com).
-- [Quantum](https://github.com/rappidAI-Research/lumen-quantum): experimental
+- [Quantum](https://github.com/rappidAI-Research/quantum-models): experimental
   model development, with [pilot and Echelon status](../../README.md).
 - [Ghost](https://github.com/rappidAI-Research/rappid-ghost): v0.2.0 released;
   v0.3 development is separate from stable release capabilities.
@@ -66,11 +66,11 @@ incorporation requirement on those pages.
 
 ## Evidence gaps retained
 
-Open issues cover [pilot artifact notices](https://github.com/rappidAI-Research/lumen-quantum/issues/2),
-[historical data revisions](https://github.com/rappidAI-Research/lumen-quantum/issues/3),
-[final pilot manifests/evaluations](https://github.com/rappidAI-Research/lumen-quantum/issues/4),
-[CPU measurements](https://github.com/rappidAI-Research/lumen-quantum/issues/5)
-and [Echelon production data](https://github.com/rappidAI-Research/lumen-quantum/issues/6).
+Open issues cover [pilot artifact notices](https://github.com/rappidAI-Research/quantum-models/issues/2),
+[historical data revisions](https://github.com/rappidAI-Research/quantum-models/issues/3),
+[final pilot manifests/evaluations](https://github.com/rappidAI-Research/quantum-models/issues/4),
+[CPU measurements](https://github.com/rappidAI-Research/quantum-models/issues/5)
+and [Echelon production data](https://github.com/rappidAI-Research/quantum-models/issues/6).
 Planning documentation does not close those evidence gaps. No new model release,
 benchmark result, cloud deployment or production-readiness claim follows from
 this preparation work.

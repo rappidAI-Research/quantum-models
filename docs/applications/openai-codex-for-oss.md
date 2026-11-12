@@ -1,7 +1,7 @@
 # OpenAI Codex for Open Source application draft
 
 Status: draft for maintainer review; not submitted.
-Primary repository: <https://github.com/rappidAI-Research/lumen-quantum>
+Primary repository: <https://github.com/rappidAI-Research/quantum-models>
 Official application: <https://openai.com/form/codex-for-oss/>
 
 The application should use the technical repository above, not the separate
@@ -40,10 +40,10 @@ not reuse this snapshot as a current fact.
 
 | Metric | Value | Source |
 | --- | ---: | --- |
-| Repository visibility | Public | [GitHub repository](https://github.com/rappidAI-Research/lumen-quantum) |
-| Stars | 1 | [GitHub repository](https://github.com/rappidAI-Research/lumen-quantum) |
-| Forks | 0 | [GitHub repository](https://github.com/rappidAI-Research/lumen-quantum) |
-| Open issues before this audit | 0 | [GitHub issues](https://github.com/rappidAI-Research/lumen-quantum/issues) |
+| Repository visibility | Public | [GitHub repository](https://github.com/rappidAI-Research/quantum-models) |
+| Stars | 1 | [GitHub repository](https://github.com/rappidAI-Research/quantum-models) |
+| Forks | 0 | [GitHub repository](https://github.com/rappidAI-Research/quantum-models) |
+| Open issues before this audit | 0 | [GitHub issues](https://github.com/rappidAI-Research/quantum-models/issues) |
 | Public package downloads | None claimed; no package publication was found or performed | [Project README](../../README.md) |
 | Public profile followers | 0 | [GitHub profile](https://github.com/jonascikemgil07-hue) |
 | Public repositories | 5 | [GitHub profile](https://github.com/jonascikemgil07-hue?tab=repositories) |

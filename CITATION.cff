@@ -5,7 +5,7 @@ type: software
 authors:
   - family-names: Cikemgil
     given-names: "Jonas Désiré"
-repository-code: "https://github.com/rappidAI-Research/lumen-quantum"
+repository-code: "https://github.com/rappidAI-Research/quantum-models"
 url: "https://www.rappidai-research.com"
 license: Apache-2.0
 version: "0.1.0-alpha (unreleased)"

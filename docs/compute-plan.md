@@ -37,7 +37,7 @@ engineering context, but their workloads are outside this Echelon budget.
 | Tokenizer | [Configuration](../configs/echelon/tokenizer.yaml), [23 passing round-trip cases](../reports/quantum-1-echelon/tokenizer_validation.json), [quality sample](../reports/quantum-1-echelon/tokenizer_quality.json), [checksums](../reports/quantum-1-echelon/tokenizer_SHA256SUMS.txt) | Reports are public; trained binaries are not tracked; not model evaluation |
 | Garden smoke | [Phase 3 report](../reports/quantum-1-echelon/garden_phase3_report.md): 5,001 documents seen, 1,559 accepted, 1,380,886 tokens | Smoke, integrity, interruption, resume and shutdown evidence only |
 | Production data | [Pinned production configuration](../configs/echelon/garden_production.yaml) | No completed production manifest or final corpus |
-| Training, evaluation, release | [Model card](../model_cards/quantum-1-echelon.md) and [open production issue](https://github.com/rappidAI-Research/lumen-quantum/issues/6) | No trained checkpoint, raw model evaluation, GGUF or release |
+| Training, evaluation, release | [Model card](../model_cards/quantum-1-echelon.md) and [open production issue](https://github.com/rappidAI-Research/quantum-models/issues/6) | No trained checkpoint, raw model evaluation, GGUF or release |
 
 ## Model and data scale
 
