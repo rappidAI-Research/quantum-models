@@ -10,7 +10,8 @@ ROOT = Path(__file__).resolve().parents[1]
 CANONICAL_OWNER = "rappidAI-Research"
 CANONICAL_REPO = "quantum-models"
 SLUG_PATTERN = re.compile(
-    r"github\.com/([A-Za-z0-9][A-Za-z0-9-]*)/(quantum-models|lumen-quantum)(?=[/#?\s]|$)"
+    r"github\.com/([A-Za-z0-9][A-Za-z0-9-]*)/(quantum-models|lumen-quantum)"
+    r"(?:\.git)?(?=$|[/#?\s)\]}>\"'\x60,;])"
 )
 TEXT_SUFFIXES = {
     ".cfg",

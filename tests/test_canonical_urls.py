@@ -33,3 +33,15 @@ def test_pattern_recognizes_the_redirected_historical_name() -> None:
 
 def test_pattern_does_not_flag_other_repository_names() -> None:
     assert SLUG_PATTERN.search("https://github.com/example/quantum-models-tools") is None
+
+
+def test_pattern_recognizes_markdown_quotes_and_clone_suffixes() -> None:
+    legacy = "https://github.com/" + CANONICAL_OWNER + "/" + "lumen-quantum"
+    for sample in [f"[code]({legacy})", f'"{legacy}"', f"git clone {legacy}.git"]:
+        match = SLUG_PATTERN.search(sample)
+        assert match is not None
+        assert match.group(2) != CANONICAL_REPO
+    clone = "https://github.com/" + "someone-else/" + CANONICAL_REPO + ".git"
+    match = SLUG_PATTERN.search(clone)
+    assert match is not None
+    assert match.group(1) != CANONICAL_OWNER
