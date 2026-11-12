@@ -6,8 +6,8 @@ authorized rappidAI account.
 
 Targets:
 
-- <https://huggingface.co/rappidAI/quantum-1-pilot>
-- <https://huggingface.co/rappidAI/quantum-1.6-pilot>
+- <https://huggingface.co/rappidai-research/quantum-1-pilot>
+- <https://huggingface.co/rappidai-research/quantum-1.6-pilot>
 
 ## Before editing either repository
 

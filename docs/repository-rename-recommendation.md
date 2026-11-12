@@ -1,16 +1,10 @@
-# Repository rename recommendation
+# Repository identity
 
-A future rename from `lumen-quantum` to `rappidai-quantum` would align the GitHub
-name with the public project identity and improve discoverability. It should not
-occur inside the readiness PR.
+As verified on 12 November 2026, the canonical technical repository is
+[`rappidAI-Research/quantum-models`](https://github.com/rappidAI-Research/quantum-models).
+The earlier recommendation to rename `lumen-quantum` is superseded.
 
-Before renaming:
-
-1. confirm the final spelling and owner;
-2. inventory clone URLs, badges, package metadata, docs, issue links, automation,
-   website links, and application forms;
-3. confirm GitHub redirects and update canonical references;
-4. announce the historical Lumen relationship;
-5. avoid renaming public models or local artifact paths in the same migration;
-6. test fresh clone, CI, Dependabot, release, and contributor workflows; and
-7. retain a rollback and communication plan.
+New clones, links, package metadata and contribution instructions use the canonical
+name. Historical runtime paths, the `lumen` Python package, schema identifiers and
+committed run evidence retain their original identity to preserve compatibility
+and provenance. Public model IDs are unchanged.

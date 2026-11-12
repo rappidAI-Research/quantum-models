@@ -6,8 +6,8 @@ contributions are the most useful. Every change is reviewed by the maintainer.
 ## Set up in a few minutes (no GPU, no downloads)
 
 ```bash
-git clone https://github.com/rappidAI-Research/lumen-quantum.git
-cd lumen-quantum
+git clone https://github.com/rappidAI-Research/quantum-models.git
+cd quantum-models
 python -m pip install -e ".[dev]"
 python examples/repo_health_quickstart.py
 ```

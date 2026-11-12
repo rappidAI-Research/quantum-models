@@ -51,9 +51,9 @@ dev = [
 
 [project.urls]
 Homepage = "https://www.rappidai-research.com"
-Documentation = "https://github.com/rappidAI-Research/lumen-quantum/tree/main/docs"
-Repository = "https://github.com/rappidAI-Research/lumen-quantum"
-Issues = "https://github.com/rappidAI-Research/lumen-quantum/issues"
+Documentation = "https://github.com/rappidAI-Research/quantum-models/tree/main/docs"
+Repository = "https://github.com/rappidAI-Research/quantum-models"
+Issues = "https://github.com/rappidAI-Research/quantum-models/issues"
 
 [tool.setuptools]
 packages = ["scripts"]

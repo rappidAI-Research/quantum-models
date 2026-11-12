@@ -1,4 +1,4 @@
-# rappidAI quantum
+# rappidAI Quantum
 
 Reproducible pipelines for preparing data, training tokenizers, developing,
 evaluating, and exporting compact language models.
@@ -17,8 +17,8 @@ checkpoint/resume, evaluation, and GGUF conversion. The separate website
 repository is a publication surface, not the technical core.
 
 Lumen was an earlier internal/project name and remains in historical commands,
-paths, and source identifiers. Files, the GitHub repository, and public model
-IDs are intentionally not renamed by this change.
+paths, and source identifiers. The canonical repository is now `rappidAI-Research/quantum-models`. Historical
+runtime paths, Python identifiers and public model IDs remain compatible.
 
 ## Capabilities
 
@@ -35,7 +35,8 @@ IDs are intentionally not renamed by this change.
 
 | Model line | Role | Verified public state |
 |---|---|---|
-| `quantum-1-pilot` | Independently pretrained pilot stage | Experimental F16 GGUF published; reuse terms remain unresolved |
+| [`quantum-sentinel-alpha`](https://github.com/rappidAI-Research/quantum-sentinel-alpha) | Security-model line in a separate repository | Qwen3.5-9B foundation selected; governed data/training pipelines implemented; no trained or evaluated release |
+| `quantum-1-pilot` | Independently pretrained pilot stage | Experimental F16 GGUF published; all rights reserved, with no public reuse grant |
 | `quantum-1.6-pilot` | Continued-pretraining pilot stage | Experimental F16 GGUF published; publisher-reported metrics; final run manifest unavailable |
 | `quantum-1-echelon` | Current strategic model line | Historical 506M preflight retained; 1B architecture/tokenizer/data freeze in progress; no trained 1B checkpoint released |
 
@@ -43,14 +44,19 @@ Echelon Base and Echelon Chat are stages or variants inside
 `quantum-1-echelon`, not separate model families. See
 [`docs/model-lineage.md`](docs/model-lineage.md) and the canonical model cards.
 
+Quantum Sentinel-Alpha, the current security-model focus, has its own
+[repository](https://github.com/rappidAI-Research/quantum-sentinel-alpha). It is
+in development and has no trained or evaluated release. This repository retains
+the pilot and Echelon language-model pipelines.
+
 ## CPU-only quickstart
 
 Python 3.11 and 3.12 are supported. This lightweight path does not install
 PyTorch, access a dataset, download a model, or require a GPU.
 
 ```bash
-git clone https://github.com/rappidAI-Research/lumen-quantum.git
-cd lumen-quantum
+git clone https://github.com/rappidAI-Research/quantum-models.git
+cd quantum-models
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
@@ -217,6 +223,6 @@ trademarks. See [`MODEL_LICENSES.md`](MODEL_LICENSES.md) and
 ## Project links
 
 - Website: [rappidAI research](https://www.rappidai-research.com)
-- Hugging Face: [rappidAI](https://huggingface.co/rappidAI)
-- Pilot model: [quantum-1-pilot](https://huggingface.co/rappidAI/quantum-1-pilot)
-- Continued pilot: [quantum-1.6-pilot](https://huggingface.co/rappidAI/quantum-1.6-pilot)
+- Hugging Face: [rappidAI](https://huggingface.co/rappidai-research)
+- Pilot model: [quantum-1-pilot](https://huggingface.co/rappidai-research/quantum-1-pilot)
+- Continued pilot: [quantum-1.6-pilot](https://huggingface.co/rappidai-research/quantum-1.6-pilot)
